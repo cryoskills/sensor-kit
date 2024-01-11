@@ -232,7 +232,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -337,6 +337,10 @@
     [
       "d0d74435-584f-4a3d-b62e-8a4de767814b",
       "Power Monitor"
+    ],
+    [
+      "3210d4dc-d4ac-4684-8c33-5530ae77228a",
+      "Sensors"
     ]
   ],
   "text_variables": {}
