@@ -275,12 +275,15 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/ADC_REF+": "KELVIN",
+      "/ADC_RTD+": "KELVIN",
       "/Power Monitor/INA3221_IN+1": "KELVIN",
       "/Power Monitor/INA3221_IN+2": "KELVIN",
       "/Power Monitor/INA3221_IN+3": "KELVIN",
       "/Power Monitor/INA3221_IN-1": "KELVIN",
       "/Power Monitor/INA3221_IN-2": "KELVIN",
-      "/Power Monitor/INA3221_IN-3": "KELVIN"
+      "/Power Monitor/INA3221_IN-3": "KELVIN",
+      "GND": "KELVIN"
     },
     "netclass_patterns": []
   },
