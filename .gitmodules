@@ -1,0 +1,12 @@
+[submodule "firmware/prototype/lib/DS18B20"]
+	path = firmware/prototype/lib/DS18B20
+	url = https://github.com/matmunk/DS18B20
+[submodule "firmware/prototype/lib/OneWire"]
+	path = firmware/prototype/lib/OneWire
+	url = https://github.com/PaulStoffregen/OneWire
+[submodule "firmware/prototype/lib/SparkFun_Indoor_Air_Quality_Sensor-ENS160_Arduino_Library"]
+	path = firmware/prototype/lib/SparkFun_Indoor_Air_Quality_Sensor-ENS160_Arduino_Library
+	url = https://github.com/sparkfun/SparkFun_Indoor_Air_Quality_Sensor-ENS160_Arduino_Library
+[submodule "firmware/prototype/lib/SparkFun_BME280_Arduino_Library"]
+	path = firmware/prototype/lib/SparkFun_BME280_Arduino_Library
+	url = https://github.com/sparkfun/SparkFun_BME280_Arduino_Library
