@@ -621,15 +621,15 @@
     (uuid ef572eb2-1f8d-49c8-bd45-4c2107aef9d7)
   )
 
-  (label "INA3221_IN+2" (at 107.95 77.47 0) (fields_autoplaced)
+  (label "INA3221_INp2" (at 107.95 77.47 0) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify left bottom))
     (uuid 1829e74d-04b4-4146-a6a6-2bac35d42cd7)
   )
-  (label "INA3221_IN-1" (at 107.95 72.39 0) (fields_autoplaced)
+  (label "INA3221_INm1" (at 107.95 72.39 0) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify left bottom))
     (uuid 34d1bb67-339b-4682-9753-1867cdd00344)
   )
-  (label "INA3221_IN+1" (at 72.39 35.56 180) (fields_autoplaced)
+  (label "INA3221_INp1" (at 72.39 102.87 180) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify right bottom))
     (uuid 47cb48d8-5091-4829-be24-2191c1c4feef)
   )
@@ -637,11 +637,11 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 5019f101-8524-43d0-ad52-9aa57c460d45)
   )
-  (label "INA3221_IN+2" (at 72.39 69.85 180) (fields_autoplaced)
+  (label "INA3221_INp2" (at 72.39 69.85 180) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify right bottom))
     (uuid 58fe50c8-31d9-4bf7-a5e2-d54b817859e9)
   )
-  (label "INA3221_IN+1" (at 107.95 69.85 0) (fields_autoplaced)
+  (label "INA3221_INp1" (at 107.95 69.85 0) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify left bottom))
     (uuid 5f91d50f-2169-4f5c-99ec-54d70dc8fe1d)
   )
@@ -657,23 +657,23 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid b3562479-b177-47a1-8266-c0415ee0d9e0)
   )
-  (label "INA3221_IN-3" (at 107.95 87.63 0) (fields_autoplaced)
+  (label "INA3221_INm3" (at 107.95 87.63 0) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify left bottom))
     (uuid b50d30bd-9f4f-4f6a-bc7f-ea5d3fba0603)
   )
-  (label "INA3221_IN-2" (at 72.39 87.63 180) (fields_autoplaced)
+  (label "INA3221_INm2" (at 72.39 87.63 180) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify right bottom))
     (uuid b6fac967-293d-4a27-9c45-d2143ec8dda5)
   )
-  (label "INA3221_IN-3" (at 72.39 120.65 180) (fields_autoplaced)
+  (label "INA3221_INm3" (at 72.39 53.34 180) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify right bottom))
     (uuid b9cec47a-f620-40a3-8416-755d2feca3c7)
   )
-  (label "INA3221_IN-1" (at 72.39 53.34 180) (fields_autoplaced)
+  (label "INA3221_INm1" (at 72.39 120.65 180) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify right bottom))
     (uuid cb1706a9-b0a4-4dd9-950e-611c368c64d6)
   )
-  (label "INA3221_IN+3" (at 72.39 102.87 180) (fields_autoplaced)
+  (label "INA3221_INp3" (at 72.39 35.56 180) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify right bottom))
     (uuid d28a6a22-ab98-438a-a8fb-d22259d531b0)
   )
@@ -689,11 +689,11 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d9b8df3f-1f44-4ff7-b716-658f0f6b151b)
   )
-  (label "INA3221_IN+3" (at 107.95 85.09 0) (fields_autoplaced)
+  (label "INA3221_INp3" (at 107.95 85.09 0) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify left bottom))
     (uuid de24461a-70ef-4dab-bb8f-6b1922cb4a42)
   )
-  (label "INA3221_IN-2" (at 107.95 80.01 0) (fields_autoplaced)
+  (label "INA3221_INm2" (at 107.95 80.01 0) (fields_autoplaced)
     (effects (font (size 0.762 0.762)) (justify left bottom))
     (uuid f611ab30-03e7-46f4-ae4c-7ede51c6520e)
   )
@@ -785,7 +785,7 @@
   (symbol (lib_id "Device:R") (at 175.26 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 05f436d5-30da-4243-99a4-676fc7475ae6)
-    (property "Reference" "R20" (at 177.8 60.96 0)
+    (property "Reference" "R23" (at 177.8 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 177.8 63.5 0)
@@ -814,7 +814,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R20") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -823,7 +823,7 @@
   (symbol (lib_id "Device:R") (at 44.45 69.85 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0fe40cb9-7ca8-436a-8ae3-4f39ad7d3dd9)
-    (property "Reference" "R8" (at 44.45 63.5 90)
+    (property "Reference" "R11" (at 44.45 63.5 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10 Ohm" (at 44.45 66.04 90)
@@ -847,12 +847,12 @@
     (property "SupplierPartNo" "" (at 44.45 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8cbef00d-d3a7-4cfc-b2f4-6408f785968b))
-    (pin "2" (uuid 7bc87714-ca8f-4a31-a95a-4ab9d3b6e21c))
+    (pin "1" (uuid 98cc926e-c8c0-4a1d-90fb-1619dead308b))
+    (pin "2" (uuid 94bdcbb0-d74f-4ed5-ac0d-1913d2899ed6))
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R8") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -861,22 +861,22 @@
   (symbol (lib_id "Device:C") (at 52.07 111.76 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 11b4293e-7bbc-4f9c-b479-8cd0e35f6739)
-    (property "Reference" "C5" (at 55.88 110.49 0)
+    (property "Reference" "C3" (at 55.88 110.49 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0.1 uF" (at 55.88 113.03 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 51.1048 107.95 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 51.1048 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer" "" (at 52.07 111.76 0)
+    (property "Manufacturer" "Kemet" (at 52.07 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MftrPartNo" "" (at 52.07 111.76 0)
+    (property "MftrPartNo" "C0603C104M5RACTU" (at 52.07 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Supplier" "" (at 52.07 111.76 0)
@@ -890,7 +890,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "C5") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -899,7 +899,7 @@
   (symbol (lib_id "Device:R") (at 44.45 35.56 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 16399e35-4e7f-4db0-99fe-d18ec113976e)
-    (property "Reference" "R6" (at 44.45 29.21 90)
+    (property "Reference" "R9" (at 44.45 29.21 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10 Ohm" (at 44.45 31.75 90)
@@ -928,7 +928,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R6") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -937,22 +937,22 @@
   (symbol (lib_id "Device:C") (at 52.07 44.45 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 236843f0-3adb-43da-bf7d-c174d99cf958)
-    (property "Reference" "C3" (at 55.88 43.18 0)
+    (property "Reference" "C1" (at 55.88 43.18 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0.1 uF" (at 55.88 45.72 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 51.1048 40.64 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 51.1048 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer" "" (at 52.07 44.45 0)
+    (property "Manufacturer" "Kemet" (at 52.07 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MftrPartNo" "" (at 52.07 44.45 0)
+    (property "MftrPartNo" "C0603C104M5RACTU" (at 52.07 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Supplier" "" (at 52.07 44.45 0)
@@ -966,7 +966,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "C3") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -975,7 +975,7 @@
   (symbol (lib_id "Device:R") (at 148.59 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 382e6a72-ee73-49ca-b9db-d3f265240749)
-    (property "Reference" "R13" (at 151.13 60.96 0)
+    (property "Reference" "R16" (at 151.13 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 151.13 63.5 0)
@@ -1004,7 +1004,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R13") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -1013,7 +1013,7 @@
   (symbol (lib_id "Device:R") (at 153.67 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3909b968-b9cf-444c-881d-abc8a9a5f2d5)
-    (property "Reference" "R14" (at 148.59 81.28 90)
+    (property "Reference" "R17" (at 148.59 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0R" (at 153.67 82.55 90)
@@ -1042,7 +1042,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R14") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -1051,7 +1051,7 @@
   (symbol (lib_id "power:GND") (at 114.3 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 44a6079e-7fc5-4619-b453-0b5d1b14cba7)
-    (property "Reference" "#PWR08" (at 114.3 63.5 0)
+    (property "Reference" "#PWR05" (at 114.3 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 114.3 62.23 0)
@@ -1067,7 +1067,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -1076,7 +1076,7 @@
   (symbol (lib_id "Device:R") (at 165.1 85.09 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4526d1cb-c24b-4e86-bfc0-ebb1cd3754b4)
-    (property "Reference" "R18" (at 160.02 83.82 90)
+    (property "Reference" "R21" (at 160.02 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0R" (at 165.1 85.09 90)
@@ -1105,7 +1105,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R18") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -1114,7 +1114,7 @@
   (symbol (lib_id "Device:R") (at 44.45 120.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4721ce2e-3a8f-4a94-8d23-f631f1e115d4)
-    (property "Reference" "R11" (at 44.45 114.3 90)
+    (property "Reference" "R14" (at 44.45 114.3 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10 Ohm" (at 44.45 116.84 90)
@@ -1143,7 +1143,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R11") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -1152,7 +1152,7 @@
   (symbol (lib_id "Device:R") (at 44.45 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4f88e3ce-7234-4a71-b0ea-aae891cb2a3d)
-    (property "Reference" "R10" (at 44.45 96.52 90)
+    (property "Reference" "R13" (at 44.45 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10 Ohm" (at 44.45 99.06 90)
@@ -1181,7 +1181,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R10") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -1190,7 +1190,7 @@
   (symbol (lib_id "Device:R") (at 157.48 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e2ad80b-f394-4670-b12c-e944b68371c4)
-    (property "Reference" "R15" (at 160.02 60.96 0)
+    (property "Reference" "R18" (at 160.02 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 160.02 63.5 0)
@@ -1219,7 +1219,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R15") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -1228,7 +1228,7 @@
   (symbol (lib_id "Device:R") (at 44.45 53.34 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f7ac2cc-30d9-4c44-aa32-a605f0265020)
-    (property "Reference" "R7" (at 44.45 46.99 90)
+    (property "Reference" "R10" (at 44.45 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10 Ohm" (at 44.45 49.53 90)
@@ -1257,7 +1257,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R7") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -1266,7 +1266,7 @@
   (symbol (lib_id "Device:R") (at 166.37 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 920e795b-d0ac-47d2-9fe6-3d87585c64ff)
-    (property "Reference" "R19" (at 168.91 60.96 0)
+    (property "Reference" "R22" (at 168.91 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 168.91 63.5 0)
@@ -1295,7 +1295,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R19") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -1304,7 +1304,7 @@
   (symbol (lib_id "Device:R") (at 102.87 45.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 95a81cb2-7182-417a-acfd-5a9e71ff02cd)
-    (property "Reference" "R12" (at 102.87 39.37 90)
+    (property "Reference" "R15" (at 102.87 39.37 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0R" (at 102.87 41.91 90)
@@ -1333,7 +1333,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R12") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -1342,7 +1342,7 @@
   (symbol (lib_id "Device:R") (at 162.56 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c1b279c1-8795-4c3a-b74f-e350497ee712)
-    (property "Reference" "R17" (at 165.1 113.03 0)
+    (property "Reference" "R20" (at 165.1 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0R" (at 165.1 115.57 0)
@@ -1371,7 +1371,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R17") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -1380,7 +1380,7 @@
   (symbol (lib_id "power:GND") (at 162.56 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c2f25644-dd8c-430e-85bc-aa6a3dd13c20)
-    (property "Reference" "#PWR010" (at 162.56 125.73 0)
+    (property "Reference" "#PWR07" (at 162.56 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 162.56 124.46 0)
@@ -1396,7 +1396,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -1405,7 +1405,7 @@
   (symbol (lib_id "power:GND") (at 129.54 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c78389a0-ccda-42d8-b706-72d72265343d)
-    (property "Reference" "#PWR09" (at 129.54 104.14 0)
+    (property "Reference" "#PWR06" (at 129.54 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 129.54 102.87 0)
@@ -1421,7 +1421,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -1430,7 +1430,7 @@
   (symbol (lib_id "Device:R") (at 162.56 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4a45689-5d0f-4d7f-9b07-6cf357ae2a56)
-    (property "Reference" "R16" (at 165.1 102.87 0)
+    (property "Reference" "R19" (at 165.1 102.87 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DNF" (at 165.1 105.41 0)
@@ -1459,7 +1459,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R16") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -1468,7 +1468,7 @@
   (symbol (lib_id "Device:R") (at 44.45 87.63 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4e73c8d-86c0-486c-8883-b0e8f1198de1)
-    (property "Reference" "R9" (at 44.45 81.28 90)
+    (property "Reference" "R12" (at 44.45 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10 Ohm" (at 44.45 83.82 90)
@@ -1492,12 +1492,12 @@
     (property "SupplierPartNo" "" (at 44.45 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2a2b2b88-db07-48dc-885c-16bf18e950cc))
-    (pin "2" (uuid b59d2a6b-4296-4650-96c2-9d5b74630ace))
+    (pin "1" (uuid 4dd70bc8-4a9f-4c17-8757-be333c7321c3))
+    (pin "2" (uuid f0c3205e-71b2-436a-b8c0-bebb382dab8e))
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "R9") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -1553,7 +1553,7 @@
           (reference "U?") (unit 1)
         )
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "U3") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -1562,22 +1562,22 @@
   (symbol (lib_id "Device:C") (at 52.07 78.74 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ed5ae915-9ec5-44a2-9009-91a43463466c)
-    (property "Reference" "C4" (at 55.88 77.47 0)
+    (property "Reference" "C2" (at 55.88 77.47 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0.1 uF" (at 55.88 80.01 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 51.1048 74.93 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 51.1048 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer" "" (at 52.07 78.74 0)
+    (property "Manufacturer" "Kemet" (at 52.07 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MftrPartNo" "" (at 52.07 78.74 0)
+    (property "MftrPartNo" "C0603C104M5RACTU" (at 52.07 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Supplier" "" (at 52.07 78.74 0)
@@ -1591,7 +1591,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "C4") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -1600,22 +1600,22 @@
   (symbol (lib_id "Device:C") (at 114.3 52.07 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fda036f7-a0e0-4aac-8dc1-62bde6cab8c5)
-    (property "Reference" "C6" (at 118.11 50.8 0)
+    (property "Reference" "C4" (at 118.11 50.8 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0.1 uF" (at 118.11 53.34 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 113.3348 48.26 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 113.3348 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 114.3 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer" "" (at 114.3 52.07 0)
+    (property "Manufacturer" "Kemet" (at 114.3 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MftrPartNo" "" (at 114.3 52.07 0)
+    (property "MftrPartNo" "C0603C104M5RACTU" (at 114.3 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Supplier" "" (at 114.3 52.07 0)
@@ -1629,7 +1629,7 @@
     (instances
       (project "cryoskills_sensor_kit"
         (path "/fc23df4b-39fb-427d-ac2c-eace5e21d1c1/d0d74435-584f-4a3d-b62e-8a4de767814b"
-          (reference "C6") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
