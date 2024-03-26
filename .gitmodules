@@ -10,3 +10,9 @@
 [submodule "firmware/prototype/lib/SparkFun_BME280_Arduino_Library"]
 	path = firmware/prototype/lib/SparkFun_BME280_Arduino_Library
 	url = https://github.com/sparkfun/SparkFun_BME280_Arduino_Library
+[submodule "firmware/prototype/lib/sensor-kit-libraries"]
+	path = firmware/prototype/lib/sensor-kit-libraries
+	url = https://github.com/cryoskills/sensor-kit-libraries/
+[submodule "firmware/prototype/lib/ZeroPowerManager"]
+	path = firmware/prototype/lib/ZeroPowerManager
+	url = https://github.com/ee-quipment/ZeroPowerManager
