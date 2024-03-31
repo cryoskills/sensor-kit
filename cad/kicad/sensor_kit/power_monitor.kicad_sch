@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "CryoSkills Sensor Kit")
+    (company "Cardiff University & CryoSkills Organising Committee")
+    (comment 1 "Auth: J. D. Hawkins, L. Craw, M. Prior-Jones, E. Fisher")
+    (comment 2 "Contact: hawkinsj22@cardiff.ac.uk")
+  )
+
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
@@ -911,7 +918,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 0523fb63-cb53-4e45-8339-b50ca9a05a1b)
   )
-  (hierarchical_label "CH1+" (shape input) (at 38.1 48.26 180) (fields_autoplaced)
+  (hierarchical_label "CH1+" (shape input) (at 38.1 157.48 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 0aa4a838-9c79-4df0-bd89-d330f0a44e79)
   )
@@ -927,7 +934,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 912a94fa-a904-4c92-98f0-962d7cb4a005)
   )
-  (hierarchical_label "CH1-" (shape input) (at 38.1 66.04 180) (fields_autoplaced)
+  (hierarchical_label "CH1-" (shape input) (at 38.1 175.26 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 9a950a79-4139-4322-834d-2cfdfe5f11d8)
   )
@@ -935,11 +942,11 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid cbc039bb-0109-4a59-81fb-94f769d18932)
   )
-  (hierarchical_label "CH3+" (shape input) (at 38.1 157.48 180) (fields_autoplaced)
+  (hierarchical_label "CH3+" (shape input) (at 38.1 48.26 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid d0a51c95-2a6e-489d-a485-935807c96f52)
   )
-  (hierarchical_label "CH3-" (shape input) (at 38.1 175.26 180) (fields_autoplaced)
+  (hierarchical_label "CH3-" (shape input) (at 38.1 66.04 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid fff7f14d-1f4f-4f0d-b826-0bdd9259157f)
   )

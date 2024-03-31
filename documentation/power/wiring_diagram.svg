@@ -9,7 +9,7 @@
    id="svg1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="wiring_diagram.svg"
-   inkscape:export-filename="wiring_diagram.png"
+   inkscape:export-filename="wiring_diagram_labelled.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="1.4805976"
-     inkscape:cx="316.76398"
-     inkscape:cy="208.36181"
+     inkscape:zoom="2.0938812"
+     inkscape:cx="333.35224"
+     inkscape:cy="208.94213"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -106,13 +106,18 @@
        xml:space="preserve"
        style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
        x="119.80972"
-       y="15"
+       y="11.825003"
        id="text3"><tspan
          sodipodi:role="line"
          id="tspan3"
          style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
          x="119.80972"
-         y="15">Solar Charge Controller</tspan></text>
+         y="11.825003">Solar Regulator</tspan><tspan
+         sodipodi:role="line"
+         style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
+         x="119.80972"
+         y="17.116665"
+         id="tspan36"> (EPEVER LP50512EU)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
@@ -293,7 +298,7 @@
          id="tspan17"
          style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
          x="127.44936"
-         y="109.94626">Sensor Kit</tspan></text>
+         y="109.94626">Sensor Kit PCB</tspan></text>
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:0.508;stroke-dasharray:none"
        id="rect18"
@@ -440,12 +445,12 @@
          y="99.948318">GND </tspan></text>
     <path
        style="fill:none;stroke:#ff0000;stroke-width:0.762;stroke-dasharray:none"
-       d="m 14.998619,25.1325 v 19.867496 h 5.001379 v 20.00001 15.265004"
+       d="m 14.998619,25.1325 v 19.867496 h 5.001379 l 0,15.000004"
        id="path28"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:0.762;stroke-dasharray:none"
-       d="M 55.000001,24.999999 V 44.999996 H 40.000003 V 80.26501"
+       d="M 55.000001,24.999999 V 44.999996 H 40.000003 l 0,15.132514"
        id="path29"
        sodipodi:nodetypes="cccc" />
     <path
@@ -463,14 +468,14 @@
        id="path33" />
     <path
        style="fill:none;stroke:#003380;stroke-width:0.762;stroke-dasharray:none"
-       d="M 29.999999,80.1325 V 49.999997 H 94.999998 V 34.999992"
+       d="m 29.999999,59.999996 0,-9.999999 H 94.999998 V 34.999992"
        id="path34"
        sodipodi:nodetypes="cccc" />
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.762;stroke-dasharray:none"
-       d="M 60,80.1325 V 64.999996 h 75 v -29.999998 0"
+       style="fill:none;stroke:#ff0000;stroke-width:0.762;stroke-dasharray:1.52400005,1.52400005;stroke-dashoffset:0"
+       d="M 60,80.1325 V 67.14812 h 75 L 135,60"
        id="path35"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="cccc" />
     <path
        id="path3"
        style="fill:#ffffff;stroke:#000000;stroke-width:0.264999"
@@ -485,11 +490,11 @@
        d="m 69.05573,75.03666 h 1 m -9.055729,1.036265 v -2.072939 h 7.97057 v 2.072939 z m -0.977345,-1.036468 h 0.977345" />
     <path
        style="fill:none;stroke:#003380;stroke-width:0.762;stroke-dasharray:none"
-       d="M 49.999999,80.1325 V 54.999997 H 115 V 34.999998"
+       d="m 49.999999,60 0,-5.000003 H 115 V 34.999998"
        id="path38"
        sodipodi:nodetypes="cccc" />
     <path
-       style="fill:none;stroke:#003380;stroke-width:0.762;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#003380;stroke-width:0.762;stroke-dasharray:1.52400005,1.52400005;stroke-opacity:1;stroke-dashoffset:0"
        d="m 70.000003,79.999997 0.08916,-9.948322 39.910847,-0.05168 V 80"
        id="path39"
        sodipodi:nodetypes="cccc" />
@@ -523,9 +528,10 @@
          x="121.08685"
          y="76.029793">12V input</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.762;stroke-dasharray:none"
-       d="M 145,39.999998 V 80"
-       id="path40" />
+       style="fill:none;stroke:#000000;stroke-width:0.762;stroke-dasharray:1.52400005,1.52400005;stroke-dashoffset:0"
+       d="m 145,60 0,20"
+       id="path40"
+       sodipodi:nodetypes="cc" />
     <circle
        style="fill:#000000;stroke:#000000;stroke-width:0.507999;stroke-dasharray:none"
        id="path41"
@@ -585,5 +591,107 @@
        style="fill:#ffffff;stroke:#000000;stroke-width:0.762;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 65.000001,24.999999 v 15"
        id="path44" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
+       x="63.077614"
+       y="-167.54239"
+       id="text29"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         id="tspan29"
+         style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
+         x="63.077614"
+         y="-167.54239">Terminal Block</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
+       x="131.80124"
+       y="64.945641"
+       id="text30"><tspan
+         sodipodi:role="line"
+         id="tspan30"
+         style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
+         x="131.80124"
+         y="64.945641">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
+       x="141.65733"
+       y="64.945641"
+       id="text31"><tspan
+         sodipodi:role="line"
+         id="tspan31"
+         style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
+         x="141.65733"
+         y="64.945641">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
+       x="36.807568"
+       y="64.945641"
+       id="text32"><tspan
+         sodipodi:role="line"
+         id="tspan32"
+         style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
+         x="36.807568"
+         y="64.945641">E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
+       x="46.663662"
+       y="64.945641"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
+         x="46.663662"
+         y="64.945641">F</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
+       x="16.801226"
+       y="64.945641"
+       id="text34"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
+         x="16.801226"
+         y="64.945641">C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.264999"
+       x="26.65732"
+       y="64.945641"
+       id="text35"><tspan
+         sodipodi:role="line"
+         id="tspan35"
+         style="font-weight:bold;font-size:4.23333px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.265"
+         x="26.65732"
+         y="64.945641">D</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.792001;stroke-dasharray:1.524, 1.524;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 20,59.999998 v 20"
+       id="path43" />
+    <path
+       style="fill:none;stroke:#003380;stroke-width:0.792001;stroke-dasharray:1.524, 1.524;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 30.000001,59.999998 v 20"
+       id="path45" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.792001;stroke-dasharray:1.524, 1.524;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 39.951423,59.999998 v 20"
+       id="path46" />
+    <path
+       style="fill:none;stroke:#003380;stroke-width:0.792001;stroke-dasharray:1.524, 1.524;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 50.000001,59.999998 v 20"
+       id="path47" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.792001;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 135,34.999999 v 25"
+       id="path48" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.792001;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 145.04858,40 V 60"
+       id="path49" />
   </g>
 </svg>

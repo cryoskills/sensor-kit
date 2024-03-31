@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "CryoSkills Sensor Kit")
+    (company "Cardiff University & CryoSkills Organising Committee")
+    (comment 1 "Auth: J. D. Hawkins, L. Craw, M. Prior-Jones, E. Fisher")
+    (comment 2 "Contact: hawkinsj22@cardiff.ac.uk")
+  )
+
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
