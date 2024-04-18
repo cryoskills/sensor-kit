@@ -20,6 +20,9 @@
 /* Measurement interval for temperature in seconds */
 #define MEASUREMENT_INTERVAL 5
 
+/* Filename for data */
+#define DATA_FILENAME "DATA.CSV"
+
 /*
   Analogue temperature mode
   -------------------------
@@ -28,9 +31,9 @@
   or not.
 */
 // Temperature mode for Wheastone bridge
-// #define TEMP_MODE_WHEATSTONE
+#define TEMP_MODE_WHEATSTONE
 // Temperature mode for potential divider
-#define TEMP_MODE_POTENTIAL
+// #define TEMP_MODE_POTENTIAL
 
 /* ---------------- PIN CONFIGURAITON ---------------- */
 /* 
@@ -94,10 +97,13 @@ const uint16_t V_VCC_mV = 3300;
 
 /* ---------------- FUNCTION DELARATIONS ---------------- */
 
+// Complete list of tasks
+void datalogger_tasks();
+
 // Temperature Functions
 void do_temperature_measurements();
 
-// Main PT1000 function
+// PT1000 function
 float get_pt1000_temperature();
   // Subroutines depending on configuration
   float get_pt1000_temperature_wheatstone();
@@ -106,11 +112,16 @@ float get_pt1000_temperature();
   // in a different function
   float pt1000_resistance_to_temperature(float resistance);
 
-// Main DS18B20 function
+// DS18B20 function
 float get_ds18b20_temperature();
+
+// SD card functions
+void setup_sd_card();
+void write_sd_card();
 
 /* ---------------- PROGRAM VARIABLES ---------------- */
 PseudoRTC* my_rtc;
+char timestamp[CRYO_RTC_TIMESTAMP_LENGTH];
 
 // Variables for temperature sensors
 float_t temperature_ds18b20;
@@ -174,6 +185,13 @@ void setup() {
     pinMode(PIN_WHEAT_IN_POS, INPUT);
   #endif
 
+  /* ---------------- INIT POWER ---------------- */
+  if (!cryo_power_init()) {
+    CRYO_DEBUG_MESSAGE("Failed to initialise INA3221");
+    cryo_error(CRYO_ERROR_INA3221_INIT);
+  }
+  delay(101);
+
   /* ---------------- CONFIGURE RTC ---------------- */
   CRYO_DEBUG_MESSAGE("Configuring clock");
   cryo_configure_clock(__DATE__, __TIME__);
@@ -190,6 +208,7 @@ void setup() {
 
   /* ---------------- SETUP SD CARD ---------------- */
 
+  setup_sd_card();
   // TODO: Move this code into a cryo_init() function or similar
   if (CRYO_DEBUG == CRYO_DEBUG_LEVEL::DEBUG_SERIAL_AND_SD)
     cryo_add_alarm_every(CRYO_DEBUG_SD_FLUSH, _cryo_debug_sd_flush); 
@@ -213,7 +232,7 @@ void setup() {
   temperature_pt1000 = NAN;
 
   /* ---------------- ADD MEASUREMENT ALARM ---------------- */
-  cryo_add_alarm_every(MEASUREMENT_INTERVAL, do_temperature_measurements);
+  cryo_add_alarm_every(MEASUREMENT_INTERVAL, datalogger_tasks);
   
 }
 
@@ -226,8 +245,27 @@ void loop() {
   cryo_sleep();
 }
 
-void do_temperature_measurements() {
+void datalogger_tasks() {
+  // Switch on LED while doing things!
   digitalWrite(LED_BUILTIN, HIGH);
+
+  // Store time at startup
+  my_rtc->get_timestamp(timestamp);
+
+  CRYO_DEBUG_MESSAGE("Starting temperature measurements");
+  do_temperature_measurements();
+
+  CRYO_DEBUG_MESSAGE("Writing data to SD card");
+  write_sd_card();
+
+  CRYO_DEBUG_MESSAGE("Sending data via radio");
+  cryo_radio_send_packet(temperature_ds18b20, temperature_pt1000, adc_pt1000_raw);
+
+  // switch it off when we are done
+  digitalWrite(LED_BUILTIN, LOW);
+}
+
+void do_temperature_measurements() {
   CRYO_DEBUG_MESSAGE("Taking measurements");
   CRYO_DEBUG_MESSAGE("Doing digital temperature measurement");
   temperature_ds18b20 = get_ds18b20_temperature();
@@ -350,4 +388,67 @@ float_t get_pt1000_temperature_potential() {
 
 float_t pt1000_resistance_to_temperature(float_t resistance) {
   return (resistance - 1000) / 3.98;
+}
+
+void setup_sd_card() {
+
+  File data_file;
+
+  // Assign date/time callback
+  SdFile::dateTimeCallback(cryo_rtc_sd_callback);
+
+  if (!SD.exists(DATA_FILENAME)) {
+    CRYO_DEBUG_MESSAGE("Data file does not exist - creating a new one!")
+
+    data_file = SD.open(DATA_FILENAME, FILE_WRITE);
+    data_file.printf("Temperature Data from CryoSkills Sensor %x\n");
+    data_file.println("timestamp,temperature_ds18b20_C,temperature_pt1000_C,adc_raw_pt1000,voltage_battery_V,voltage_panel_V,voltage_load_V,current_battery_mA,current_panel_mA,current_load_mA");
+
+    data_file.close();
+
+  } 
+
+}
+
+void write_sd_card() {
+
+  File data_file;
+
+  CRYO_DEBUG_MESSAGE("Getting power consumption data.");
+  // TODO: move this to another function
+  float_t voltage_battery, voltage_panel, voltage_load;
+  float_t current_battery, current_panel, current_load;
+
+  // 
+  voltage_battery = cryo_power_battery_voltage();
+  voltage_panel = cryo_power_solar_panel_voltage();
+  voltage_load = cryo_power_load_voltage();
+
+  current_battery = cryo_power_battery_current() * 1000;
+  current_panel = cryo_power_solar_panel_current() * 1000;
+  current_load = cryo_power_load_current() * 1000;
+
+  CRYO_DEBUG_MESSAGE("Writing temperature and power data to SD.");
+  data_file = SD.open(DATA_FILENAME, FILE_WRITE);
+  data_file.print(timestamp);
+  data_file.print(",");
+  data_file.print(temperature_ds18b20, 4);
+  data_file.print(",");
+  data_file.print(temperature_pt1000, 4);
+  data_file.print(",");
+  data_file.print(adc_pt1000_raw);
+  data_file.print(",");
+  data_file.print(voltage_battery, 4);
+  data_file.print(",");
+  data_file.print(voltage_panel, 4);
+  data_file.print(",");
+  data_file.print(voltage_load, 4);
+  data_file.print(",");
+  data_file.print(current_battery, 4);
+  data_file.print(",");
+  data_file.print(current_panel, 4);
+  data_file.print(",");
+  data_file.println(current_load, 4);
+  data_file.close();
+
 }
