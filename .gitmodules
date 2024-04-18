@@ -16,3 +16,19 @@
 [submodule "firmware/prototype/lib/ZeroPowerManager"]
 	path = firmware/prototype/lib/ZeroPowerManager
 	url = https://github.com/ee-quipment/ZeroPowerManager
+
+[submodule "firmware/datalogger-2024/lib/ZeroPowerManager"]
+	path = firmware/datalogger-2024/lib/ZeroPowerManager
+	url = https://github.com/ee-quipment/ZeroPowerManager/
+[submodule "firmware/datalogger-2024/lib/INA3221"]
+	path = firmware/datalogger-2024/lib/INA3221
+	url = https://github.com/cryoskills/INA3221
+[submodule "firmware/datalogger-2024/lib/OneWire"]
+	path = firmware/datalogger-2024/lib/OneWire
+	url = https://github.com/PaulStoffregen/OneWire
+[submodule "firmware/datalogger-2024/lib/DS18B20"]
+	path = firmware/datalogger-2024/lib/DS18B20
+	url = https://github.com/matmunk/DS18B20
+[submodule "firmware/datalogger-2024/lib/RadioHead"]
+	path = firmware/datalogger-2024/lib/RadioHead
+	url = https://github.com/PaulStoffregen/RadioHead
