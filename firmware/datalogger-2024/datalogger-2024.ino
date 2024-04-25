@@ -3,7 +3,7 @@
 /* ---------------- USER CONFIGURATION ---------------- */
 
 /* Unique Sensor ID for radio packet */
-#define SENSOR_ID 0xc5000000
+#define SENSOR_ID 0xc5999998
 
 /* Baud rate for serial communication */
 #define BAUD_RATE 115200
